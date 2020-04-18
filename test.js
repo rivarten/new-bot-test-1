@@ -17,7 +17,7 @@ const url = (v) => {
 
 const parse = (v) => {
   return new Promise((resolve, reject) => {
-    JSDOM.fromURL('https://www.yahoo.co.jp').then((res) => {
+    JSDOM.fromURL('http://trantrip.com/detail/id/00000098441').then((res) => {
       console.log('parse complete');
       resolve(res);
     }).catch(err => {
